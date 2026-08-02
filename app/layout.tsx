@@ -18,7 +18,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN" className="dark" suppressHydrationWarning>
+    <html lang="zh-CN" className="dark overflow-x-hidden" suppressHydrationWarning>
       <body className="min-h-screen overflow-x-hidden bg-black text-neutral-100 antialiased">
         <Navbar />
         <main className="min-h-screen">{children}</main>

@@ -47,7 +47,7 @@ export function SelectedWorks() {
         <div className="section-rule mt-4" />
       </div>
 
-      <div className="mb-10 flex gap-6">
+      <div className="mb-10 flex flex-wrap gap-x-6 gap-y-3">
         {TABS.map((t) => (
           <button
             key={t}
@@ -69,6 +69,7 @@ export function SelectedWorks() {
           {mixed.map((m, i) => (
             <motion.div
               key={m.id}
+              className="min-w-0"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
