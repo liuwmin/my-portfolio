@@ -16,7 +16,7 @@ export default function Home() {
       <section className="border-t border-white/10 bg-neutral-950 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mb-10">
-            <h2 className="text-3xl font-semibold uppercase tracking-[0.25em] text-neutral-100 md:text-4xl">
+            <h2 className="text-xl font-semibold uppercase tracking-[0.2em] text-neutral-100 sm:text-2xl md:text-4xl md:tracking-[0.25em]">
               Latest Thoughts
             </h2>
             <div className="section-rule mt-4" />

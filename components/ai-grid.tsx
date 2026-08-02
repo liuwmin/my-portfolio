@@ -57,7 +57,7 @@ export function AIGrid({ data }: { data: AIWork[] }) {
             <img
               src={active.src}
               alt={active.title}
-              className="mx-auto block max-h-[70vh] w-auto"
+              className="mx-auto block max-h-[70vh] w-auto max-w-full h-auto"
             />
             <div className="p-6">
               <p className="text-lg font-medium tracking-wide text-white">

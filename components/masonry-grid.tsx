@@ -62,7 +62,7 @@ export function MasonryGrid({ data }: { data: Photo[] }) {
             <img
               src={active.src}
               alt={active.title}
-              className="mx-auto block max-h-[78vh] w-auto"
+              className="mx-auto block max-h-[78vh] w-auto max-w-full h-auto"
             />
             <div className="p-6">
               <p className="text-lg font-medium tracking-wide text-white">
