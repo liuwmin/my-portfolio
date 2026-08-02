@@ -1,0 +1,20 @@
+{
+  "works": [
+    {
+      "id": "1",
+      "title": "fd598415 image 1",
+      "src": "/ai-works/20260726005151-fd598415-image-1.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-07"
+    },
+    {
+      "id": "2",
+      "title": "人物头肩三视图生成 (1) 已编辑",
+      "src": "/ai-works/人物头肩三视图生成 (1)-已编辑.jpg",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-07"
+    }
+  ]
+}

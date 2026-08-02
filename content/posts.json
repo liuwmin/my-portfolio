@@ -1,0 +1,7 @@
+{
+  "posts": [
+    { "id": "1", "slug": "my-ai-workflow", "title": "我的 AI 创作工作流", "date": "2024-03-20", "excerpt": "从 Midjourney 到后期调色，我如何定义自己的 AI 美学...", "content": "第一段落内容写在这里。\n\n第二段：我通常会在早晨开始创作，因为那时候大脑最清醒。\n\n第三段：关于提示词的思考，我认为关键词的排列顺序比堆砌更重要。", "tags": ["AI", "Workflow"] },
+    { "id": "2", "slug": "photography-in-rain", "title": "为什么我喜欢在雨天拍照", "date": "2024-02-15", "excerpt": "阴天的漫反射光其实比晴天更容易出片...", "content": "雨天拍照的最大优势在于光线的柔和度。\n\n街道的倒影让画面自带对称构图。\n\n保护器材的小技巧：我用的是透明浴帽套在相机上。", "tags": ["Photography", "Story"] },
+    { "id": "3", "slug": "first-short-film", "title": "我拍第一部短片时踩过的坑", "date": "2024-01-10", "excerpt": "从脚本到剪辑，独立创作者必须知道的三件事...", "content": "坑一：永远没有足够的存储卡。\n\n坑二：现场收音比画面更重要。\n\n坑三：剪辑时杀掉你最喜欢的镜头。", "tags": ["Film", "Beginner"] }
+  ]
+}

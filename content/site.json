@@ -1,0 +1,20 @@
+{
+  "profile": {
+    "name": "liuwm",
+    "tagline": "PHOTOGRAPHER & AI ARTIST & FILMMAKER",
+    "bio": "这里写你的个人简介，例如：我是一名跨媒介创作者，专注于捕捉光影与算法的交汇点。镜头之外，我用 AI 延展想象的边界；影像之中，我寻找那些转瞬即逝的真实。",
+    "email": "1523003762@qq.com",
+    "avatar": "/avatar.png",
+    "social": {
+      "instagram": "https://www.instagram.com/liuwm.ing/",
+      "twitter": "https://x.com/J0KgDBYzlekq0Li",
+      "youtube": "https://youtube.com/@yourname",
+      "github": "https://github.com/yourname"
+    }
+  },
+  "hero": {
+    "backgroundImage": "/hero.png",
+    "title": "LIUWMING",
+    "subtitle": "CAPTURING THE IMPOSSIBLE"
+  }
+}
