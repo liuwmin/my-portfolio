@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 import { NextRequest, NextResponse } from "next/server";
 import { writeFile, mkdir, readFile } from "fs/promises";
 import { join, extname, relative, sep } from "path";
