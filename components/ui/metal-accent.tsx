@@ -13,9 +13,10 @@ export function MetalAccent({ className }: { className?: string }) {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+    const cv = canvas;
     const gl =
-      (canvas.getContext("webgl") as WebGLRenderingContext | null) ||
-      (canvas.getContext("experimental-webgl") as WebGLRenderingContext | null);
+      (cv.getContext("webgl") as WebGLRenderingContext | null) ||
+      (cv.getContext("experimental-webgl") as WebGLRenderingContext | null);
     if (!gl) return;
     const ctx = gl;
 
@@ -82,11 +83,11 @@ export function MetalAccent({ className }: { className?: string }) {
 
     function resize() {
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-      const w = Math.max(1, Math.floor(canvas.clientWidth * dpr));
-      const h = Math.max(1, Math.floor(canvas.clientHeight * dpr));
-      if (canvas.width !== w || canvas.height !== h) {
-        canvas.width = w;
-        canvas.height = h;
+      const w = Math.max(1, Math.floor(cv.clientWidth * dpr));
+      const h = Math.max(1, Math.floor(cv.clientHeight * dpr));
+      if (cv.width !== w || cv.height !== h) {
+        cv.width = w;
+        cv.height = h;
         ctx.viewport(0, 0, w, h);
       }
     }
@@ -96,7 +97,7 @@ export function MetalAccent({ className }: { className?: string }) {
     function render(now: number) {
       resize();
       ctx.uniform1f(uTime, (now - start) / 1000);
-      ctx.uniform2f(uRes, canvas.width, canvas.height);
+      ctx.uniform2f(uRes, cv.width, cv.height);
       ctx.drawArrays(ctx.TRIANGLE_STRIP, 0, 4);
       raf = requestAnimationFrame(render);
     }
