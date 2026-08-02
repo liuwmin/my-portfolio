@@ -24,7 +24,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="shimmer text-6xl font-bold tracking-[0.2em] md:text-8xl"
+          className="shimmer text-4xl font-bold tracking-[0.15em] sm:text-6xl sm:tracking-[0.2em] md:text-8xl"
         >
           {site.hero.title}
         </motion.h1>
@@ -32,7 +32,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.4 }}
-          className="mt-6 text-sm uppercase tracking-[0.4em] text-neutral-300 md:text-base"
+          className="mt-4 text-xs uppercase tracking-[0.3em] text-neutral-300 sm:mt-6 sm:text-sm sm:tracking-[0.4em] md:text-base"
         >
           {site.hero.subtitle}
         </motion.p>
