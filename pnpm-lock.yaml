@@ -5,6 +5,8 @@ settings:
   excludeLinksFromLockfile: false
   onlyBuiltDependencies:
     - sharp
+    - lightningcss
+    - '@tailwindcss/oxide'
 
 importers:
 
