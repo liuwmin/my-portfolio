@@ -2,8 +2,8 @@
   "works": [
     {
       "id": "1",
-      "title": "fd598415 image 1",
-      "src": "/ai-works/写真/20260726005151-fd598415-image-1.webp",
+      "title": "唐装",
+      "src": "/ai-works/写真/1唐装.webp",
       "prompt": "",
       "model": "AI Generated",
       "date": "2026-08",
@@ -11,11 +11,11 @@
     },
     {
       "id": "2",
-      "title": "e8928f2ef314706b7fd3465af531e7d tplv tb4s082cfz aigc resize 2400 2400",
-      "src": "/ai-works/写真/7e8928f2ef314706b7fd3465af531e7d-tplv-tb4s082cfz-aigc_resize_2400_2400.webp",
+      "title": "巫师",
+      "src": "/ai-works/写真/2巫师.webp",
       "prompt": "",
       "model": "AI Generated",
-      "date": "2026-06",
+      "date": "2026-08",
       "category": "写真"
     },
     {
@@ -29,15 +29,6 @@
     },
     {
       "id": "4",
-      "title": "ChatGPT Image 2026年5月15日 16 27 19",
-      "src": "/ai-works/写真/ChatGPT Image 2026年5月15日 16_27_19.webp",
-      "prompt": "",
-      "model": "AI Generated",
-      "date": "2026-08",
-      "category": "写真"
-    },
-    {
-      "id": "5",
       "title": "ChatGPT Image 2026年5月17日 19 27 12",
       "src": "/ai-works/写真/ChatGPT Image 2026年5月17日 19_27_12.webp",
       "prompt": "",
@@ -46,7 +37,7 @@
       "category": "写真"
     },
     {
-      "id": "6",
+      "id": "5",
       "title": "ChatGPT Image 2026年6月11日 14 18 29",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月11日 14_18_29.webp",
       "prompt": "",
@@ -55,7 +46,7 @@
       "category": "写真"
     },
     {
-      "id": "7",
+      "id": "6",
       "title": "ChatGPT Image 2026年6月15日 13 52 20",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月15日 13_52_20.webp",
       "prompt": "",
@@ -64,7 +55,7 @@
       "category": "写真"
     },
     {
-      "id": "8",
+      "id": "7",
       "title": "ChatGPT Image 2026年6月28日 18 50 06",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月28日 18_50_06.webp",
       "prompt": "",
@@ -73,7 +64,7 @@
       "category": "写真"
     },
     {
-      "id": "9",
+      "id": "8",
       "title": "ChatGPT Image 2026年6月6日 21 18 37",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月6日 21_18_37.webp",
       "prompt": "",
@@ -82,7 +73,7 @@
       "category": "写真"
     },
     {
-      "id": "10",
+      "id": "9",
       "title": "ChatGPT Image 2026年6月6日 23 21 18",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月6日 23_21_18.webp",
       "prompt": "",
@@ -91,7 +82,7 @@
       "category": "写真"
     },
     {
-      "id": "11",
+      "id": "10",
       "title": "ChatGPT Image 2026年6月7日 12 40 44",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月7日 12_40_44.webp",
       "prompt": "",
@@ -100,7 +91,7 @@
       "category": "写真"
     },
     {
-      "id": "12",
+      "id": "11",
       "title": "ChatGPT Image 2026年6月7日 12 48 41",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月7日 12_48_41.webp",
       "prompt": "",
@@ -109,7 +100,7 @@
       "category": "写真"
     },
     {
-      "id": "13",
+      "id": "12",
       "title": "ChatGPT Image 2026年6月8日 20 39 10",
       "src": "/ai-works/写真/ChatGPT Image 2026年6月8日 20_39_10.webp",
       "prompt": "",
@@ -118,7 +109,7 @@
       "category": "写真"
     },
     {
-      "id": "14",
+      "id": "13",
       "title": "ChatGPT Image 2026年7月16日 11 13 09",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月16日 11_13_09.webp",
       "prompt": "",
@@ -127,7 +118,7 @@
       "category": "写真"
     },
     {
-      "id": "15",
+      "id": "14",
       "title": "ChatGPT Image 2026年7月1日 12 11 59",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月1日 12_11_59.webp",
       "prompt": "",
@@ -136,7 +127,7 @@
       "category": "写真"
     },
     {
-      "id": "16",
+      "id": "15",
       "title": "ChatGPT Image 2026年7月1日 12 54 27",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月1日 12_54_27.webp",
       "prompt": "",
@@ -145,7 +136,7 @@
       "category": "写真"
     },
     {
-      "id": "17",
+      "id": "16",
       "title": "ChatGPT Image 2026年7月1日 13 58 20",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月1日 13_58_20.webp",
       "prompt": "",
@@ -154,7 +145,7 @@
       "category": "写真"
     },
     {
-      "id": "18",
+      "id": "17",
       "title": "ChatGPT Image 2026年7月27日 18 55 31",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 18_55_31.webp",
       "prompt": "",
@@ -163,7 +154,7 @@
       "category": "写真"
     },
     {
-      "id": "19",
+      "id": "18",
       "title": "ChatGPT Image 2026年7月27日 19 28 16 (1)",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 19_28_16 (1).webp",
       "prompt": "",
@@ -172,7 +163,7 @@
       "category": "写真"
     },
     {
-      "id": "20",
+      "id": "19",
       "title": "ChatGPT Image 2026年7月27日 19 28 17 (2)",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 19_28_17 (2).webp",
       "prompt": "",
@@ -181,7 +172,7 @@
       "category": "写真"
     },
     {
-      "id": "21",
+      "id": "20",
       "title": "ChatGPT Image 2026年7月27日 19 41 53",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 19_41_53.webp",
       "prompt": "",
@@ -190,7 +181,7 @@
       "category": "写真"
     },
     {
-      "id": "22",
+      "id": "21",
       "title": "ChatGPT Image 2026年7月30日 18 41 01",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月30日 18_41_01.webp",
       "prompt": "",
@@ -199,7 +190,7 @@
       "category": "写真"
     },
     {
-      "id": "23",
+      "id": "22",
       "title": "ChatGPT Image 2026年7月30日 18 47 55",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月30日 18_47_55.webp",
       "prompt": "",
@@ -208,7 +199,7 @@
       "category": "写真"
     },
     {
-      "id": "24",
+      "id": "23",
       "title": "ChatGPT Image 2026年7月30日 19 37 38",
       "src": "/ai-works/写真/ChatGPT Image 2026年7月30日 19_37_38.webp",
       "prompt": "",
@@ -217,7 +208,7 @@
       "category": "写真"
     },
     {
-      "id": "25",
+      "id": "24",
       "title": "ChatGPT Image 2026年8月1日 11 21 47",
       "src": "/ai-works/写真/ChatGPT Image 2026年8月1日 11_21_47.webp",
       "prompt": "",
@@ -226,7 +217,7 @@
       "category": "写真"
     },
     {
-      "id": "26",
+      "id": "25",
       "title": "ChatGPT Image 2026年8月2日 13 42 12",
       "src": "/ai-works/写真/ChatGPT Image 2026年8月2日 13_42_12.webp",
       "prompt": "",
@@ -235,7 +226,7 @@
       "category": "写真"
     },
     {
-      "id": "27",
+      "id": "26",
       "title": "Gemini Generated Image 7ywrhd7ywrhd7ywr",
       "src": "/ai-works/写真/Gemini_Generated_Image_7ywrhd7ywrhd7ywr.webp",
       "prompt": "",
@@ -244,7 +235,7 @@
       "category": "写真"
     },
     {
-      "id": "28",
+      "id": "27",
       "title": "Gemini Generated Image ah3o44ah3o44ah3o",
       "src": "/ai-works/写真/Gemini_Generated_Image_ah3o44ah3o44ah3o.webp",
       "prompt": "",
@@ -253,7 +244,7 @@
       "category": "写真"
     },
     {
-      "id": "29",
+      "id": "28",
       "title": "I7MG",
       "src": "/ai-works/写真/I7MG.webp",
       "prompt": "",
@@ -262,7 +253,7 @@
       "category": "写真"
     },
     {
-      "id": "30",
+      "id": "29",
       "title": "IM6G",
       "src": "/ai-works/写真/IM6G.webp",
       "prompt": "",
@@ -271,7 +262,7 @@
       "category": "写真"
     },
     {
-      "id": "31",
+      "id": "30",
       "title": "IMG",
       "src": "/ai-works/写真/IMG.webp",
       "prompt": "",
@@ -280,7 +271,7 @@
       "category": "写真"
     },
     {
-      "id": "32",
+      "id": "31",
       "title": "Woman with blue jewelry 202607272014",
       "src": "/ai-works/写真/Woman_with_blue_jewelry_202607272014.webp",
       "prompt": "",
@@ -289,7 +280,7 @@
       "category": "写真"
     },
     {
-      "id": "33",
+      "id": "32",
       "title": "ac328f634f0049e5ac18c278f79889fd tplv tb4s082cfz aigc resize 2400 2400",
       "src": "/ai-works/写真/ac328f634f0049e5ac18c278f79889fd-tplv-tb4s082cfz-aigc_resize_2400_2400.webp",
       "prompt": "",
@@ -298,12 +289,21 @@
       "category": "写真"
     },
     {
-      "id": "34",
+      "id": "33",
       "title": "generated image 65a1289f b962 4562 8133 2636146d246f",
       "src": "/ai-works/写真/generated_image_65a1289f-b962-4562-8133-2636146d246f.webp",
       "prompt": "",
       "model": "AI Generated",
       "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "34",
+      "title": "hhoiho",
+      "src": "/ai-works/写真/hhoiho.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-06",
       "category": "写真"
     },
     {
