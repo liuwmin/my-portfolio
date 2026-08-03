@@ -2,6 +2,609 @@
   "works": [
     {
       "id": "1",
+      "title": "fd598415 image 1",
+      "src": "/ai-works/写真/20260726005151-fd598415-image-1.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "2",
+      "title": "e8928f2ef314706b7fd3465af531e7d tplv tb4s082cfz aigc resize 2400 2400",
+      "src": "/ai-works/写真/7e8928f2ef314706b7fd3465af531e7d-tplv-tb4s082cfz-aigc_resize_2400_2400.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-06",
+      "category": "写真"
+    },
+    {
+      "id": "3",
+      "title": "e38a00c409948f6aef81f255f7b4bad tplv tb4s082cfz aigc resize 2400 2400",
+      "src": "/ai-works/写真/8e38a00c409948f6aef81f255f7b4bad-tplv-tb4s082cfz-aigc_resize_2400_2400.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-05",
+      "category": "写真"
+    },
+    {
+      "id": "4",
+      "title": "ChatGPT Image 2026年5月15日 16 27 19",
+      "src": "/ai-works/写真/ChatGPT Image 2026年5月15日 16_27_19.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "5",
+      "title": "ChatGPT Image 2026年5月17日 19 27 12",
+      "src": "/ai-works/写真/ChatGPT Image 2026年5月17日 19_27_12.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "6",
+      "title": "ChatGPT Image 2026年6月11日 14 18 29",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月11日 14_18_29.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "7",
+      "title": "ChatGPT Image 2026年6月15日 13 52 20",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月15日 13_52_20.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "8",
+      "title": "ChatGPT Image 2026年6月28日 18 50 06",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月28日 18_50_06.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "9",
+      "title": "ChatGPT Image 2026年6月6日 21 18 37",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月6日 21_18_37.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "10",
+      "title": "ChatGPT Image 2026年6月6日 23 21 18",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月6日 23_21_18.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "11",
+      "title": "ChatGPT Image 2026年6月7日 12 40 44",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月7日 12_40_44.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "12",
+      "title": "ChatGPT Image 2026年6月7日 12 48 41",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月7日 12_48_41.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "13",
+      "title": "ChatGPT Image 2026年6月8日 20 39 10",
+      "src": "/ai-works/写真/ChatGPT Image 2026年6月8日 20_39_10.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "14",
+      "title": "ChatGPT Image 2026年7月16日 11 13 09",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月16日 11_13_09.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "15",
+      "title": "ChatGPT Image 2026年7月1日 12 11 59",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月1日 12_11_59.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "16",
+      "title": "ChatGPT Image 2026年7月1日 12 54 27",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月1日 12_54_27.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "17",
+      "title": "ChatGPT Image 2026年7月1日 13 58 20",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月1日 13_58_20.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "18",
+      "title": "ChatGPT Image 2026年7月27日 18 55 31",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 18_55_31.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "19",
+      "title": "ChatGPT Image 2026年7月27日 19 28 16 (1)",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 19_28_16 (1).webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "20",
+      "title": "ChatGPT Image 2026年7月27日 19 28 17 (2)",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 19_28_17 (2).webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "21",
+      "title": "ChatGPT Image 2026年7月27日 19 41 53",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月27日 19_41_53.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "22",
+      "title": "ChatGPT Image 2026年7月30日 18 41 01",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月30日 18_41_01.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "23",
+      "title": "ChatGPT Image 2026年7月30日 18 47 55",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月30日 18_47_55.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "24",
+      "title": "ChatGPT Image 2026年7月30日 19 37 38",
+      "src": "/ai-works/写真/ChatGPT Image 2026年7月30日 19_37_38.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "25",
+      "title": "ChatGPT Image 2026年8月1日 11 21 47",
+      "src": "/ai-works/写真/ChatGPT Image 2026年8月1日 11_21_47.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "26",
+      "title": "ChatGPT Image 2026年8月2日 13 42 12",
+      "src": "/ai-works/写真/ChatGPT Image 2026年8月2日 13_42_12.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "27",
+      "title": "Gemini Generated Image 7ywrhd7ywrhd7ywr",
+      "src": "/ai-works/写真/Gemini_Generated_Image_7ywrhd7ywrhd7ywr.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "28",
+      "title": "Gemini Generated Image ah3o44ah3o44ah3o",
+      "src": "/ai-works/写真/Gemini_Generated_Image_ah3o44ah3o44ah3o.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "29",
+      "title": "I7MG",
+      "src": "/ai-works/写真/I7MG.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "30",
+      "title": "IM6G",
+      "src": "/ai-works/写真/IM6G.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "31",
+      "title": "IMG",
+      "src": "/ai-works/写真/IMG.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "32",
+      "title": "Woman with blue jewelry 202607272014",
+      "src": "/ai-works/写真/Woman_with_blue_jewelry_202607272014.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "33",
+      "title": "ac328f634f0049e5ac18c278f79889fd tplv tb4s082cfz aigc resize 2400 2400",
+      "src": "/ai-works/写真/ac328f634f0049e5ac18c278f79889fd-tplv-tb4s082cfz-aigc_resize_2400_2400.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-06",
+      "category": "写真"
+    },
+    {
+      "id": "34",
+      "title": "generated image 65a1289f b962 4562 8133 2636146d246f",
+      "src": "/ai-works/写真/generated_image_65a1289f-b962-4562-8133-2636146d246f.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "35",
+      "title": "zimage",
+      "src": "/ai-works/写真/zimage.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "36",
+      "title": "即梦4.5",
+      "src": "/ai-works/写真/即梦4.5.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "37",
+      "title": "民国风 即梦5pro",
+      "src": "/ai-works/写真/民国风 即梦5pro.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "写真"
+    },
+    {
+      "id": "38",
+      "title": "b8a72a57e8445bb9612ddf28b0aa1c",
+      "src": "/ai-works/创意/05b8a72a57e8445bb9612ddf28b0aa1c.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "39",
+      "title": "f86265823e4c1299821e95ba95506b",
+      "src": "/ai-works/创意/09f86265823e4c1299821e95ba95506b.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "40",
+      "title": "d75dbb63 image 1",
+      "src": "/ai-works/创意/20260801123839-d75dbb63-image-1.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "41",
+      "title": "d37d596014ae596c760283f955970",
+      "src": "/ai-works/创意/480d37d596014ae596c760283f955970.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "42",
+      "title": "bd32be6b4a6394aa6fc7eb3bf803",
+      "src": "/ai-works/创意/5326bd32be6b4a6394aa6fc7eb3bf803.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "43",
+      "title": "bdcc389ea94177a14fd53ce4ff91e8",
+      "src": "/ai-works/创意/83bdcc389ea94177a14fd53ce4ff91e8.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "44",
+      "title": "AI 1785729746535",
+      "src": "/ai-works/创意/AI-1785729746535.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "45",
+      "title": "AI 1785730007524",
+      "src": "/ai-works/创意/AI-1785730007524.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "46",
+      "title": "AI 1785730294393",
+      "src": "/ai-works/创意/AI-1785730294393.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "47",
+      "title": "AI 1785730550296",
+      "src": "/ai-works/创意/AI-1785730550296.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "48",
+      "title": "ChatGPT Image 2",
+      "src": "/ai-works/创意/ChatGPT Image 2.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "49",
+      "title": "ChatGPT Image 2026年5月21日 21 46 47",
+      "src": "/ai-works/创意/ChatGPT Image 2026年5月21日 21_46_47.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "50",
+      "title": "ChatGPT Image 2026年6月3日 09 18 45",
+      "src": "/ai-works/创意/ChatGPT Image 2026年6月3日 09_18_45.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "51",
+      "title": "ChatGPT Image 2026年6月3日 09 41 38",
+      "src": "/ai-works/创意/ChatGPT Image 2026年6月3日 09_41_38.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "52",
+      "title": "ChatGPT Image 2026年6月7日 11 10 38",
+      "src": "/ai-works/创意/ChatGPT Image 2026年6月7日 11_10_38.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "53",
+      "title": "ChatGPT Image 2026年6月7日 11 21 27",
+      "src": "/ai-works/创意/ChatGPT Image 2026年6月7日 11_21_27.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "54",
+      "title": "ChatGPT Image 2026年7月22日 22 55 22",
+      "src": "/ai-works/创意/ChatGPT Image 2026年7月22日 22_55_22.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "55",
+      "title": "ChatGPT Image 2026年7月8日 13 24 08",
+      "src": "/ai-works/创意/ChatGPT Image 2026年7月8日 13_24_08.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "56",
+      "title": "a5876bfc113a44d2ad503698f278b9a7",
+      "src": "/ai-works/创意/a5876bfc113a44d2ad503698f278b9a7.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "57",
+      "title": "a87b837587f74da6b13947f2feaa10ce",
+      "src": "/ai-works/创意/a87b837587f74da6b13947f2feaa10ce.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "58",
+      "title": "aBqWJ",
+      "src": "/ai-works/创意/aBqWJ.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "59",
+      "title": "b60bb16b344c48d0bb9f8dbfabf39493",
+      "src": "/ai-works/创意/b60bb16b344c48d0bb9f8dbfabf39493.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "60",
+      "title": "d76bf66334b245209120d16dae9b7799",
+      "src": "/ai-works/创意/d76bf66334b245209120d16dae9b7799.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "61",
+      "title": "fa8f2af861034eccaed48f1a8b52d9a3",
+      "src": "/ai-works/创意/fa8f2af861034eccaed48f1a8b52d9a3.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "62",
+      "title": "generated image 0994c7a3 d9f5 4725 9d3a e3a03ec24f3a",
+      "src": "/ai-works/创意/generated_image_0994c7a3-d9f5-4725-9d3a-e3a03ec24f3a.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "63",
+      "title": "generated image 65baa400 a394 4dec 816b 6c760cabcd3e",
+      "src": "/ai-works/创意/generated_image_65baa400-a394-4dec-816b-6c760cabcd3e.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "64",
+      "title": "styleme 1 (3)",
+      "src": "/ai-works/创意/styleme-1 (3).webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "65",
+      "title": "九宫格 图片 故事板",
+      "src": "/ai-works/创意/九宫格 图片 故事板.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "66",
+      "title": "四宫格 故事板",
+      "src": "/ai-works/创意/四宫格 故事板.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "67",
+      "title": "空中楼阁 琉璃",
+      "src": "/ai-works/创意/空中楼阁 琉璃.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "创意"
+    },
+    {
+      "id": "68",
       "title": "f3775a904305a0c1008fe5de14c4",
       "src": "/ai-works/人设/2666f3775a904305a0c1008fe5de14c4.webp",
       "prompt": "",
@@ -10,7 +613,7 @@
       "category": "人设"
     },
     {
-      "id": "2",
+      "id": "69",
       "title": "ebbe73 5b82 420f bc9b 49bcd7fe9dc8 20260717021428371 6a598fa74b6d4b03f8ab4629 0 7aaf3c5b",
       "src": "/ai-works/人设/39ebbe73-5b82-420f-bc9b-49bcd7fe9dc8-20260717021428371-6a598fa74b6d4b03f8ab4629-0-7aaf3c5b.webp",
       "prompt": "",
@@ -19,7 +622,7 @@
       "category": "人设"
     },
     {
-      "id": "3",
+      "id": "70",
       "title": "ce038a424251a6a0115761144924",
       "src": "/ai-works/人设/4407ce038a424251a6a0115761144924.webp",
       "prompt": "",
@@ -28,7 +631,7 @@
       "category": "人设"
     },
     {
-      "id": "4",
+      "id": "71",
       "title": "e1ad788c72746a6a6c70b35d3b55979 tplv tb4s082cfz aigc resize 1080 1080",
       "src": "/ai-works/人设/5e1ad788c72746a6a6c70b35d3b55979-tplv-tb4s082cfz-aigc_resize_1080_1080.webp",
       "prompt": "",
@@ -37,7 +640,7 @@
       "category": "人设"
     },
     {
-      "id": "5",
+      "id": "72",
       "title": "b1e2d13c4a4935b95f16eac39a9b4b",
       "src": "/ai-works/人设/72b1e2d13c4a4935b95f16eac39a9b4b.webp",
       "prompt": "",
@@ -46,7 +649,7 @@
       "category": "人设"
     },
     {
-      "id": "6",
+      "id": "73",
       "title": "f1c7507 8996 437e 9255 5cd2835add88 20260710070708391 6a5099d038040e1513aaa07a 0 939f789b",
       "src": "/ai-works/人设/7f1c7507-8996-437e-9255-5cd2835add88-20260710070708391-6a5099d038040e1513aaa07a-0-939f789b.webp",
       "prompt": "",
@@ -55,7 +658,7 @@
       "category": "人设"
     },
     {
-      "id": "7",
+      "id": "74",
       "title": "b19f45733e8469c8606a0877bd78add",
       "src": "/ai-works/人设/9b19f45733e8469c8606a0877bd78add.webp",
       "prompt": "",
@@ -64,7 +667,7 @@
       "category": "人设"
     },
     {
-      "id": "8",
+      "id": "75",
       "title": "Character concept art reference … 202607281807",
       "src": "/ai-works/人设/Character_concept_art_reference_…_202607281807.webp",
       "prompt": "",
@@ -73,7 +676,7 @@
       "category": "人设"
     },
     {
-      "id": "9",
+      "id": "76",
       "title": "Character concept art rules 2K 202607232304",
       "src": "/ai-works/人设/Character_concept_art_rules_2K_202607232304.webp",
       "prompt": "",
@@ -82,7 +685,7 @@
       "category": "人设"
     },
     {
-      "id": "10",
+      "id": "77",
       "title": "Character four view studio portrait 2K 202607161610",
       "src": "/ai-works/人设/Character_four-view_studio_portrait_2K_202607161610.webp",
       "prompt": "",
@@ -91,7 +694,25 @@
       "category": "人设"
     },
     {
-      "id": "11",
+      "id": "78",
+      "title": "Characters looking at camera 2K 202607242106",
+      "src": "/ai-works/人设/Characters_looking_at_camera_2K_202607242106.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "79",
+      "title": "Characters looking at camera 2K 202607242119",
+      "src": "/ai-works/人设/Characters_looking_at_camera_2K_202607242119.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "80",
       "title": "ChatGPT Image 2026年6月19日 14 48 51",
       "src": "/ai-works/人设/ChatGPT Image 2026年6月19日 14_48_51.webp",
       "prompt": "",
@@ -100,7 +721,7 @@
       "category": "人设"
     },
     {
-      "id": "12",
+      "id": "81",
       "title": "ChatGPT Image 2026年6月28日 19 14 50",
       "src": "/ai-works/人设/ChatGPT Image 2026年6月28日 19_14_50.webp",
       "prompt": "",
@@ -109,7 +730,7 @@
       "category": "人设"
     },
     {
-      "id": "13",
+      "id": "82",
       "title": "ChatGPT Image 2026年7月12日 08 29 47",
       "src": "/ai-works/人设/ChatGPT Image 2026年7月12日 08_29_47.webp",
       "prompt": "",
@@ -118,7 +739,7 @@
       "category": "人设"
     },
     {
-      "id": "14",
+      "id": "83",
       "title": "ComfyUI 00001  (2)",
       "src": "/ai-works/人设/ComfyUI_00001_ (2).webp",
       "prompt": "",
@@ -127,7 +748,7 @@
       "category": "人设"
     },
     {
-      "id": "15",
+      "id": "84",
       "title": "ComfyUI 00004",
       "src": "/ai-works/人设/ComfyUI_00004_.webp",
       "prompt": "",
@@ -136,7 +757,7 @@
       "category": "人设"
     },
     {
-      "id": "16",
+      "id": "85",
       "title": "ComfyUI 00008",
       "src": "/ai-works/人设/ComfyUI_00008_.webp",
       "prompt": "",
@@ -145,7 +766,7 @@
       "category": "人设"
     },
     {
-      "id": "17",
+      "id": "86",
       "title": "Gemini Generated Image 4r9ach4r9ach4r9a",
       "src": "/ai-works/人设/Gemini_Generated_Image_4r9ach4r9ach4r9a.webp",
       "prompt": "",
@@ -154,7 +775,7 @@
       "category": "人设"
     },
     {
-      "id": "18",
+      "id": "87",
       "title": "Gemini Generated Image 7tnh2k7tnh2k7tnh",
       "src": "/ai-works/人设/Gemini_Generated_Image_7tnh2k7tnh2k7tnh.webp",
       "prompt": "",
@@ -163,7 +784,16 @@
       "category": "人设"
     },
     {
-      "id": "19",
+      "id": "88",
+      "title": "Gemini Generated Image ahy61oahy61oahy6",
+      "src": "/ai-works/人设/Gemini_Generated_Image_ahy61oahy61oahy6.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "89",
       "title": "Gemini Generated Image dia8sdia8sdia8sd",
       "src": "/ai-works/人设/Gemini_Generated_Image_dia8sdia8sdia8sd.webp",
       "prompt": "",
@@ -172,7 +802,7 @@
       "category": "人设"
     },
     {
-      "id": "20",
+      "id": "90",
       "title": "Gemini Generated Image imtxhzimtxhzimtx",
       "src": "/ai-works/人设/Gemini_Generated_Image_imtxhzimtxhzimtx.webp",
       "prompt": "",
@@ -181,7 +811,7 @@
       "category": "人设"
     },
     {
-      "id": "21",
+      "id": "91",
       "title": "Gemini Generated Image kbg4n4kbg4n4kbg4",
       "src": "/ai-works/人设/Gemini_Generated_Image_kbg4n4kbg4n4kbg4.webp",
       "prompt": "",
@@ -190,7 +820,7 @@
       "category": "人设"
     },
     {
-      "id": "22",
+      "id": "92",
       "title": "Gemini Generated Image mvxfoqmvxfoqmvxf",
       "src": "/ai-works/人设/Gemini_Generated_Image_mvxfoqmvxfoqmvxf.webp",
       "prompt": "",
@@ -199,7 +829,7 @@
       "category": "人设"
     },
     {
-      "id": "23",
+      "id": "93",
       "title": "Gemini Generated Image shpyu2shpyu2shpy",
       "src": "/ai-works/人设/Gemini_Generated_Image_shpyu2shpyu2shpy.webp",
       "prompt": "",
@@ -208,7 +838,7 @@
       "category": "人设"
     },
     {
-      "id": "24",
+      "id": "94",
       "title": "IM33G",
       "src": "/ai-works/人设/IM33G.webp",
       "prompt": "",
@@ -217,7 +847,7 @@
       "category": "人设"
     },
     {
-      "id": "25",
+      "id": "95",
       "title": "Portrait of person looking camera 202607281005",
       "src": "/ai-works/人设/Portrait_of_person_looking_camera_202607281005.webp",
       "prompt": "",
@@ -226,7 +856,7 @@
       "category": "人设"
     },
     {
-      "id": "26",
+      "id": "96",
       "title": "c1506afc21254e22a04d7819066faebe",
       "src": "/ai-works/人设/c1506afc21254e22a04d7819066faebe.webp",
       "prompt": "",
@@ -235,7 +865,7 @@
       "category": "人设"
     },
     {
-      "id": "27",
+      "id": "97",
       "title": "cab9c76678184481af9cb75a41b0f716",
       "src": "/ai-works/人设/cab9c76678184481af9cb75a41b0f716.webp",
       "prompt": "",
@@ -244,7 +874,7 @@
       "category": "人设"
     },
     {
-      "id": "28",
+      "id": "98",
       "title": "d5d1d022e2024b80aec5b9db01a2fa51",
       "src": "/ai-works/人设/d5d1d022e2024b80aec5b9db01a2fa51.webp",
       "prompt": "",
@@ -253,7 +883,7 @@
       "category": "人设"
     },
     {
-      "id": "29",
+      "id": "99",
       "title": "d7a6ae03bd4b418ebaa7782ebd49b190",
       "src": "/ai-works/人设/d7a6ae03bd4b418ebaa7782ebd49b190.webp",
       "prompt": "",
@@ -262,7 +892,7 @@
       "category": "人设"
     },
     {
-      "id": "30",
+      "id": "100",
       "title": "e0bfb76c3b0148fba077e86ca9bada0d",
       "src": "/ai-works/人设/e0bfb76c3b0148fba077e86ca9bada0d.webp",
       "prompt": "",
@@ -271,7 +901,16 @@
       "category": "人设"
     },
     {
-      "id": "31",
+      "id": "101",
+      "title": "generated image 0372eafc 22ac 4e1d bdca 82bc8c36cad6",
+      "src": "/ai-works/人设/generated_image_0372eafc-22ac-4e1d-bdca-82bc8c36cad6.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "102",
       "title": "林砚  后期",
       "src": "/ai-works/人设/林砚  后期.webp",
       "prompt": "",
@@ -280,7 +919,7 @@
       "category": "人设"
     },
     {
-      "id": "32",
+      "id": "103",
       "title": "生成16 9三联横向头肩三视图",
       "src": "/ai-works/人设/生成16_9三联横向头肩三视图.webp",
       "prompt": "",
@@ -289,7 +928,7 @@
       "category": "人设"
     },
     {
-      "id": "33",
+      "id": "104",
       "title": "生成人物脸部三视图 (3)",
       "src": "/ai-works/人设/生成人物脸部三视图 (3).webp",
       "prompt": "",
@@ -298,7 +937,16 @@
       "category": "人设"
     },
     {
-      "id": "34",
+      "id": "105",
+      "title": "白色服饰 带仙人头饰和发型",
+      "src": "/ai-works/人设/白色服饰 带仙人头饰和发型.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "106",
       "title": "神话 诸葛",
       "src": "/ai-works/人设/神话 诸葛.webp",
       "prompt": "",
@@ -307,7 +955,7 @@
       "category": "人设"
     },
     {
-      "id": "35",
+      "id": "107",
       "title": "绿蜥蜴 战斗服",
       "src": "/ai-works/人设/绿蜥蜴 战斗服.webp",
       "prompt": "",
@@ -316,7 +964,7 @@
       "category": "人设"
     },
     {
-      "id": "36",
+      "id": "108",
       "title": "耄耋",
       "src": "/ai-works/人设/耄耋.webp",
       "prompt": "",
@@ -325,7 +973,7 @@
       "category": "人设"
     },
     {
-      "id": "37",
+      "id": "109",
       "title": "西欧中世纪王子",
       "src": "/ai-works/人设/西欧中世纪王子.webp",
       "prompt": "",
@@ -334,7 +982,7 @@
       "category": "人设"
     },
     {
-      "id": "38",
+      "id": "110",
       "title": "赛博古风战甲2 威武 男1",
       "src": "/ai-works/人设/赛博古风战甲2 威武 男1.webp",
       "prompt": "",
