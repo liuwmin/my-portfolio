@@ -33,10 +33,8 @@ export async function POST(req: NextRequest) {
       publicPath = join(PUBLIC_DIR, "works", filename);
     } else if (target === "ai") {
       // AI 作品：按分类存到 public/ai-works/<分类>/，默认"写真"
-      const safeCat =
-        category === "写真" || category === "创意" || category === "人设"
-          ? category
-          : "写真";
+      const validCats = ["写真", "创意", "人设", "二次元"];
+      const safeCat = validCats.includes(category) ? category : "写真";
       publicPath = join(PUBLIC_DIR, "ai-works", safeCat, filename);
     } else if (target === "video-cover") {
       // 视频封面：存到 public/video-covers/，文件名带时间戳避免重名

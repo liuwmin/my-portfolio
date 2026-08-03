@@ -14,7 +14,7 @@ export type AIWork = {
   category?: string;
 };
 
-const CATEGORIES = ["写真", "创意", "人设"] as const;
+const CATEGORIES = ["写真", "创意", "人设", "二次元"] as const;
 type Category = (typeof CATEGORIES)[number] | "ALL";
 
 function workCategory(w: AIWork): string {

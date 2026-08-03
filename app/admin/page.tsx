@@ -352,7 +352,7 @@ export default function AdminPage() {
             <span className="text-xs uppercase tracking-wider text-neutral-500">
               上传到分类：
             </span>
-            {["写真", "创意", "人设"].map((c) => (
+            {["写真", "创意", "人设", "二次元"].map((c) => (
               <button
                 key={c}
                 onClick={() => setAiCategory(c)}
