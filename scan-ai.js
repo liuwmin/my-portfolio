@@ -14,8 +14,8 @@ const OUTPUT_FILE = path.join(__dirname, "content", "ai-works.json");
 const IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"];
 
 // 分类文件夹 → 分类名。根目录的散图归入"创意"（默认）
-// 顺序即网站标签页展示顺序（二次元放最后）
-const CATEGORY_FOLDERS = ["写真", "创意", "人设", "二次元"];
+// 顺序即网站标签页展示顺序（开源专区放最后）
+const CATEGORY_FOLDERS = ["写真", "创意", "人设", "二次元", "开源专区"];
 const DEFAULT_CATEGORY = "创意";
 
 function getTitle(filename) {
