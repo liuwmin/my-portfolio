@@ -8,12 +8,12 @@ import { Sheet } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
 const LINKS = [
-  { href: "/", label: "HOME" },
-  { href: "/photography", label: "PHOTOGRAPHY" },
+  { href: "/", label: "主页" },
+  { href: "/photography", label: "摄影" },
   { href: "/ai-works", label: "AI" },
-  { href: "/videos", label: "VIDEOS" },
-  { href: "/blog", label: "BLOG" },
-  { href: "/about", label: "ABOUT" },
+  { href: "/videos", label: "视频" },
+  { href: "/blog", label: "博客" },
+  { href: "/about", label: "联系" },
 ];
 
 export function Navbar() {
@@ -54,7 +54,7 @@ export function Navbar() {
               key={l.href}
               href={l.href}
               className={cn(
-                "text-xs uppercase tracking-[0.25em] transition-opacity duration-300",
+                "text-xs tracking-[0.15em] transition-opacity duration-300",
                 isActive(l.href)
                   ? "text-white opacity-100"
                   : "text-white/50 hover:text-white hover:opacity-100"
@@ -82,7 +82,7 @@ export function Navbar() {
               href={l.href}
               onClick={() => setOpen(false)}
               className={cn(
-                "text-base uppercase tracking-[0.25em]",
+                "text-base tracking-[0.1em]",
                 isActive(l.href) ? "text-white" : "text-white/70"
               )}
             >
