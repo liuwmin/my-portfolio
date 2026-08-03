@@ -75,15 +75,15 @@ export function Navbar() {
       </nav>
 
       <Sheet open={open} onClose={() => setOpen(false)}>
-        <div className="mt-12 flex flex-col gap-6">
+        <div className="mt-12 flex flex-col gap-8">
           {LINKS.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
               className={cn(
-                "text-sm uppercase tracking-[0.25em]",
-                isActive(l.href) ? "text-white" : "text-white/50"
+                "text-base uppercase tracking-[0.25em]",
+                isActive(l.href) ? "text-white" : "text-white/70"
               )}
             >
               {l.label}

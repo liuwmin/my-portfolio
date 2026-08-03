@@ -40,10 +40,10 @@ export function Sheet({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          <div className="absolute inset-0 bg-black/80" onClick={onClose} />
+          <div className="absolute inset-0 bg-black/95 backdrop-blur-md" onClick={onClose} />
           <motion.div
             className={cn(
-              "absolute top-0 h-full w-72 border-white/10 bg-black p-6",
+              "absolute top-0 h-full w-full border-white/10 bg-neutral-950 p-8 sm:w-80 sm:p-6",
               side === "right" ? "right-0 border-l" : "left-0 border-r",
               className
             )}
