@@ -12,7 +12,12 @@ type Profile = {
   avatar: string;
   social: Social;
 };
-type Hero = { backgroundImage: string; title: string; subtitle: string };
+type Hero = {
+  backgroundImage: string;
+  mobileBackgroundImage: string;
+  title: string;
+  subtitle: string;
+};
 type Site = { profile: Profile; hero: Hero };
 type Media = { name: string; url: string; path?: string };
 type VideoItem = {
@@ -119,7 +124,7 @@ export default function AdminPage() {
 
   async function uploadFile(
     file: File,
-    target: "hero" | "avatar" | "works" | "ai",
+    target: "hero" | "hero-mobile" | "avatar" | "works" | "ai",
     category?: string
   ) {
     const reader = new FileReader();
@@ -365,6 +370,44 @@ export default function AdminPage() {
             value={site.hero.backgroundImage}
             onChange={(v) => updatePath("hero.backgroundImage", v)}
           />
+        </Section>
+
+        {/* Hero Mobile */}
+        <Section
+          title="首页手机壁纸（可选）"
+          desc="手机端单独用的竖版壁纸，避免横图被裁切。不设置则手机端沿用桌面大图。建议上传 9:16 竖图。"
+        >
+          <div className="grid gap-4 md:grid-cols-[200px_1fr]">
+            <div className="overflow-hidden rounded-lg border border-white/10">
+              {site.hero.mobileBackgroundImage ? (
+                <img
+                  src={site.hero.mobileBackgroundImage}
+                  alt=""
+                  className="h-64 w-full object-cover"
+                />
+              ) : (
+                <div className="flex h-64 w-full items-center justify-center text-xs text-neutral-600">
+                  未设置
+                </div>
+              )}
+            </div>
+            <div className="space-y-3">
+              <DropZone
+                hint="拖入竖版图片替换，或点击选择文件"
+                onFiles={(files) =>
+                  files.forEach((f) => uploadFile(f, "hero-mobile"))
+                }
+              />
+              {site.hero.mobileBackgroundImage && (
+                <button
+                  onClick={() => updatePath("hero.mobileBackgroundImage", "")}
+                  className="text-xs text-neutral-500 underline-offset-4 transition-colors hover:text-red-400 hover:underline"
+                >
+                  清除手机壁纸（恢复使用桌面图）
+                </button>
+              )}
+            </div>
+          </div>
         </Section>
 
         {/* Avatar */}

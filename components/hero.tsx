@@ -8,12 +8,27 @@ import site from "@/content/site.json";
 export function Hero() {
   return (
     <section className="relative flex h-screen w-full items-center justify-center overflow-hidden">
+      {/* 手机端专用壁纸（竖图），未设置时回退到主图 */}
+      {site.hero.mobileBackgroundImage ? (
+        <Image
+          src={site.hero.mobileBackgroundImage}
+          alt={site.hero.title}
+          fill
+          priority
+          className="object-cover sm:hidden"
+        />
+      ) : null}
+      {/* 桌面端壁纸（横图） */}
       <Image
         src={site.hero.backgroundImage}
         alt={site.hero.title}
         fill
         priority
-        className="object-cover"
+        className={
+          site.hero.mobileBackgroundImage
+            ? "hidden object-cover sm:block"
+            : "object-cover"
+        }
       />
       <div className="absolute inset-0 bg-black/40" />
       <MetalAccent className="absolute inset-0 h-full w-full" />

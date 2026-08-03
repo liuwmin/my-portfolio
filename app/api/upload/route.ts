@@ -25,6 +25,11 @@ export async function POST(req: NextRequest) {
       const safeName = "hero" + ext;
       publicPath = join(PUBLIC_DIR, safeName);
       siteUpdate["hero.backgroundImage"] = "/" + safeName;
+    } else if (target === "hero-mobile") {
+      // 手机端专用壁纸（竖图）
+      const safeName = "hero-mobile" + ext;
+      publicPath = join(PUBLIC_DIR, safeName);
+      siteUpdate["hero.mobileBackgroundImage"] = "/" + safeName;
     } else if (target === "avatar") {
       const safeName = "avatar" + ext;
       publicPath = join(PUBLIC_DIR, safeName);
