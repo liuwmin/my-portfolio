@@ -9,11 +9,13 @@ export function Dialog({
   onClose,
   children,
   className,
+  style,
 }: {
   open: boolean;
   onClose: () => void;
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -43,6 +45,7 @@ export function Dialog({
             onClick={onClose}
           />
           <motion.div
+            style={style}
             className={cn(
               "relative z-10 max-h-[90vh] w-full max-w-5xl overflow-auto rounded-lg border border-white/10 bg-neutral-950",
               className
