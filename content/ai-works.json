@@ -2,19 +2,345 @@
   "works": [
     {
       "id": "1",
-      "title": "fd598415 image 1",
-      "src": "/ai-works/20260726005151-fd598415-image-1.webp",
+      "title": "f3775a904305a0c1008fe5de14c4",
+      "src": "/ai-works/人设/2666f3775a904305a0c1008fe5de14c4.webp",
       "prompt": "",
       "model": "AI Generated",
-      "date": "2026-07"
+      "date": "2026-08",
+      "category": "人设"
     },
     {
       "id": "2",
-      "title": "人物头肩三视图生成 (1) 已编辑",
-      "src": "/ai-works/人物头肩三视图生成 (1)-已编辑.jpg",
+      "title": "ebbe73 5b82 420f bc9b 49bcd7fe9dc8 20260717021428371 6a598fa74b6d4b03f8ab4629 0 7aaf3c5b",
+      "src": "/ai-works/人设/39ebbe73-5b82-420f-bc9b-49bcd7fe9dc8-20260717021428371-6a598fa74b6d4b03f8ab4629-0-7aaf3c5b.webp",
       "prompt": "",
       "model": "AI Generated",
-      "date": "2026-07"
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "3",
+      "title": "ce038a424251a6a0115761144924",
+      "src": "/ai-works/人设/4407ce038a424251a6a0115761144924.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "4",
+      "title": "e1ad788c72746a6a6c70b35d3b55979 tplv tb4s082cfz aigc resize 1080 1080",
+      "src": "/ai-works/人设/5e1ad788c72746a6a6c70b35d3b55979-tplv-tb4s082cfz-aigc_resize_1080_1080.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-06",
+      "category": "人设"
+    },
+    {
+      "id": "5",
+      "title": "b1e2d13c4a4935b95f16eac39a9b4b",
+      "src": "/ai-works/人设/72b1e2d13c4a4935b95f16eac39a9b4b.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "6",
+      "title": "f1c7507 8996 437e 9255 5cd2835add88 20260710070708391 6a5099d038040e1513aaa07a 0 939f789b",
+      "src": "/ai-works/人设/7f1c7507-8996-437e-9255-5cd2835add88-20260710070708391-6a5099d038040e1513aaa07a-0-939f789b.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "7",
+      "title": "b19f45733e8469c8606a0877bd78add",
+      "src": "/ai-works/人设/9b19f45733e8469c8606a0877bd78add.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "8",
+      "title": "Character concept art reference … 202607281807",
+      "src": "/ai-works/人设/Character_concept_art_reference_…_202607281807.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "9",
+      "title": "Character concept art rules 2K 202607232304",
+      "src": "/ai-works/人设/Character_concept_art_rules_2K_202607232304.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "10",
+      "title": "Character four view studio portrait 2K 202607161610",
+      "src": "/ai-works/人设/Character_four-view_studio_portrait_2K_202607161610.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "11",
+      "title": "ChatGPT Image 2026年6月19日 14 48 51",
+      "src": "/ai-works/人设/ChatGPT Image 2026年6月19日 14_48_51.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "12",
+      "title": "ChatGPT Image 2026年6月28日 19 14 50",
+      "src": "/ai-works/人设/ChatGPT Image 2026年6月28日 19_14_50.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "13",
+      "title": "ChatGPT Image 2026年7月12日 08 29 47",
+      "src": "/ai-works/人设/ChatGPT Image 2026年7月12日 08_29_47.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "14",
+      "title": "ComfyUI 00001  (2)",
+      "src": "/ai-works/人设/ComfyUI_00001_ (2).webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "15",
+      "title": "ComfyUI 00004",
+      "src": "/ai-works/人设/ComfyUI_00004_.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "16",
+      "title": "ComfyUI 00008",
+      "src": "/ai-works/人设/ComfyUI_00008_.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "17",
+      "title": "Gemini Generated Image 4r9ach4r9ach4r9a",
+      "src": "/ai-works/人设/Gemini_Generated_Image_4r9ach4r9ach4r9a.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "18",
+      "title": "Gemini Generated Image 7tnh2k7tnh2k7tnh",
+      "src": "/ai-works/人设/Gemini_Generated_Image_7tnh2k7tnh2k7tnh.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "19",
+      "title": "Gemini Generated Image dia8sdia8sdia8sd",
+      "src": "/ai-works/人设/Gemini_Generated_Image_dia8sdia8sdia8sd.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "20",
+      "title": "Gemini Generated Image imtxhzimtxhzimtx",
+      "src": "/ai-works/人设/Gemini_Generated_Image_imtxhzimtxhzimtx.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "21",
+      "title": "Gemini Generated Image kbg4n4kbg4n4kbg4",
+      "src": "/ai-works/人设/Gemini_Generated_Image_kbg4n4kbg4n4kbg4.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "22",
+      "title": "Gemini Generated Image mvxfoqmvxfoqmvxf",
+      "src": "/ai-works/人设/Gemini_Generated_Image_mvxfoqmvxfoqmvxf.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "23",
+      "title": "Gemini Generated Image shpyu2shpyu2shpy",
+      "src": "/ai-works/人设/Gemini_Generated_Image_shpyu2shpyu2shpy.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "24",
+      "title": "IM33G",
+      "src": "/ai-works/人设/IM33G.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "25",
+      "title": "Portrait of person looking camera 202607281005",
+      "src": "/ai-works/人设/Portrait_of_person_looking_camera_202607281005.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "26",
+      "title": "c1506afc21254e22a04d7819066faebe",
+      "src": "/ai-works/人设/c1506afc21254e22a04d7819066faebe.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "27",
+      "title": "cab9c76678184481af9cb75a41b0f716",
+      "src": "/ai-works/人设/cab9c76678184481af9cb75a41b0f716.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "28",
+      "title": "d5d1d022e2024b80aec5b9db01a2fa51",
+      "src": "/ai-works/人设/d5d1d022e2024b80aec5b9db01a2fa51.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "29",
+      "title": "d7a6ae03bd4b418ebaa7782ebd49b190",
+      "src": "/ai-works/人设/d7a6ae03bd4b418ebaa7782ebd49b190.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "30",
+      "title": "e0bfb76c3b0148fba077e86ca9bada0d",
+      "src": "/ai-works/人设/e0bfb76c3b0148fba077e86ca9bada0d.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "31",
+      "title": "林砚  后期",
+      "src": "/ai-works/人设/林砚  后期.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "32",
+      "title": "生成16 9三联横向头肩三视图",
+      "src": "/ai-works/人设/生成16_9三联横向头肩三视图.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "33",
+      "title": "生成人物脸部三视图 (3)",
+      "src": "/ai-works/人设/生成人物脸部三视图 (3).webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "34",
+      "title": "神话 诸葛",
+      "src": "/ai-works/人设/神话 诸葛.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "35",
+      "title": "绿蜥蜴 战斗服",
+      "src": "/ai-works/人设/绿蜥蜴 战斗服.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "36",
+      "title": "耄耋",
+      "src": "/ai-works/人设/耄耋.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "37",
+      "title": "西欧中世纪王子",
+      "src": "/ai-works/人设/西欧中世纪王子.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
+    },
+    {
+      "id": "38",
+      "title": "赛博古风战甲2 威武 男1",
+      "src": "/ai-works/人设/赛博古风战甲2 威武 男1.webp",
+      "prompt": "",
+      "model": "AI Generated",
+      "date": "2026-08",
+      "category": "人设"
     }
   ]
 }

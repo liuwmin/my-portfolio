@@ -14,7 +14,7 @@ type Profile = {
 };
 type Hero = { backgroundImage: string; title: string; subtitle: string };
 type Site = { profile: Profile; hero: Hero };
-type Media = { name: string; url: string };
+type Media = { name: string; url: string; path?: string };
 type VideoItem = {
   id: string;
   title: string;
@@ -49,6 +49,7 @@ export default function AdminPage() {
   const [works, setWorks] = useState<Media[]>([]);
   const [ais, setAIs] = useState<Media[]>([]);
   const [videos, setVideos] = useState<VideoItem[]>([]);
+  const [aiCategory, setAiCategory] = useState("写真");
   const [status, setStatus] = useState<{ kind: "ok" | "err"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
 
@@ -102,7 +103,11 @@ export default function AdminPage() {
     }
   }
 
-  async function uploadFile(file: File, target: "hero" | "avatar" | "works" | "ai") {
+  async function uploadFile(
+    file: File,
+    target: "hero" | "avatar" | "works" | "ai",
+    category?: string
+  ) {
     const reader = new FileReader();
     reader.onload = async () => {
       const data = reader.result as string;
@@ -110,7 +115,12 @@ export default function AdminPage() {
         const r = await fetch("/api/upload", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ target, filename: file.name, data }),
+          body: JSON.stringify({
+            target,
+            filename: file.name,
+            data,
+            category: target === "ai" ? category : undefined,
+          }),
         });
         const result = await r.json();
         if (r.ok) {
@@ -338,12 +348,30 @@ export default function AdminPage() {
 
         {/* AI */}
         <Section title={`AI 作品 (${ais.length})`}>
+          <div className="flex items-center gap-3">
+            <span className="text-xs uppercase tracking-wider text-neutral-500">
+              上传到分类：
+            </span>
+            {["写真", "创意", "人设"].map((c) => (
+              <button
+                key={c}
+                onClick={() => setAiCategory(c)}
+                className={
+                  aiCategory === c
+                    ? "rounded-sm border border-white/40 bg-white/10 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-white"
+                    : "rounded-sm border border-white/15 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-neutral-400 hover:text-white"
+                }
+              >
+                {c}
+              </button>
+            ))}
+          </div>
           <DropZone
-            hint="拖入图片批量添加 AI 作品"
+            hint={`拖入图片批量添加到「${aiCategory}」分类`}
             onFiles={(files) =>
               files
                 .filter((f) => f.type.startsWith("image/"))
-                .forEach((f) => uploadFile(f, "ai"))
+                .forEach((f) => uploadFile(f, "ai", aiCategory))
             }
           />
           <MediaGrid items={ais} onDelete={(n) => deleteFile("ai", n)} />
@@ -537,12 +565,17 @@ function MediaGrid({
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 md:grid-cols-6">
       {items.map((m) => (
-        <div key={m.name} className="group relative">
+        <div key={m.path || m.name} className="group relative">
           <div className="aspect-square overflow-hidden rounded border border-white/10">
             <img src={m.url} alt="" className="h-full w-full object-cover" />
           </div>
+          {m.path && m.path.includes("/") && (
+            <span className="absolute left-1 top-1 rounded bg-black/60 px-1.5 py-0.5 text-[9px] uppercase tracking-wider text-white">
+              {m.path.split("/")[0]}
+            </span>
+          )}
           <button
-            onClick={() => onDelete(m.name)}
+            onClick={() => onDelete(m.path || m.name)}
             className="absolute right-1 top-1 hidden rounded-full bg-black/70 p-1.5 text-white transition-opacity group-hover:block"
             aria-label="删除"
           >

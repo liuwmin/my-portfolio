@@ -1,8 +1,9 @@
 /**
  * 一键刷新 AI 作品 — 扫描 public/ai-works/ 里的图片，
- * 自动生成 content/ai-works.json。
+ * 按子文件夹（写真 / 创意 / 人设）自动分类，
+ * 生成 content/ai-works.json。
  *
- * prompt/model/date 会给默认值，你可手动改 JSON 补充。
+ * 用法：直接把图拖进对应分类文件夹，双击 scan-all.bat 即可。
  */
 const fs = require("fs");
 const path = require("path");
@@ -10,7 +11,11 @@ const path = require("path");
 const WORKS_DIR = path.join(__dirname, "public", "ai-works");
 const OUTPUT_FILE = path.join(__dirname, "content", "ai-works.json");
 
-const IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".gif"];
+const IMAGE_EXTENSIONS = [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"];
+
+// 分类文件夹 → 分类名。根目录的散图归入"创意"（默认）
+const CATEGORY_FOLDERS = ["写真", "创意", "人设"];
+const DEFAULT_CATEGORY = "创意";
 
 function getTitle(filename) {
   const ext = path.extname(filename);
@@ -30,35 +35,60 @@ function getDate(filePath) {
   }
 }
 
+// 扫描某个目录里的图片（不递归子目录）
+function scanDir(dir, category) {
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => IMAGE_EXTENSIONS.includes(path.extname(f).toLowerCase()))
+    .sort()
+    .map((file) => ({
+      title: getTitle(file),
+      src: `/ai-works/${category}/${file}`,
+      prompt: "",
+      model: "AI Generated",
+      date: getDate(path.join(dir, file)),
+      category,
+    }));
+}
+
 function scanWorks() {
   if (!fs.existsSync(WORKS_DIR)) {
     fs.mkdirSync(WORKS_DIR, { recursive: true });
   }
+  // 确保三个分类文件夹存在
+  for (const cat of CATEGORY_FOLDERS) {
+    fs.mkdirSync(path.join(WORKS_DIR, cat), { recursive: true });
+  }
 
-  const files = fs
-    .readdirSync(WORKS_DIR)
-    .filter((f) => IMAGE_EXTENSIONS.includes(path.extname(f).toLowerCase()))
-    .sort();
+  let works = [];
 
-  if (files.length === 0) {
+  // 1. 分类子文件夹
+  for (const cat of CATEGORY_FOLDERS) {
+    works = works.concat(scanDir(path.join(WORKS_DIR, cat), cat));
+  }
+
+  // 2. 根目录散图 → 归入默认分类
+  works = works.concat(scanDir(WORKS_DIR, DEFAULT_CATEGORY));
+
+  if (works.length === 0) {
     console.log("\n⚠️  public/ai-works/ 里还没有图片。\n");
     return;
   }
 
-  const works = files.map((file, idx) => ({
-    id: String(idx + 1),
-    title: getTitle(file),
-    src: `/ai-works/${file}`,
-    prompt: "",
-    model: "AI Generated",
-    date: getDate(path.join(WORKS_DIR, file)),
-  }));
+  // 重新编号 id
+  const finalWorks = works.map((w, idx) => ({ id: String(idx + 1), ...w }));
 
-  const json = { works };
+  const json = { works: finalWorks };
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(json, null, 2) + "\n", "utf-8");
 
-  console.log(`\n✅ 已扫描 ${works.length} 张 AI 作品，写入 content/ai-works.json`);
-  console.log("   默认 prompt 为空，可在 JSON 里补写提示词。\n");
+  const countByCat = {};
+  for (const w of finalWorks) {
+    countByCat[w.category] = (countByCat[w.category] || 0) + 1;
+  }
+  console.log(`\n✅ 已扫描 ${finalWorks.length} 张 AI 作品，写入 content/ai-works.json`);
+  console.log("   分类统计：" + Object.entries(countByCat).map(([k, v]) => `${k} ${v}张`).join("，"));
+  console.log("   提示：直接把图片拖进 public/ai-works/ 对应分类文件夹即可。\n");
 }
 
 scanWorks();

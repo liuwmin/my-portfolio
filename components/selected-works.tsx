@@ -101,7 +101,7 @@ export function SelectedWorks() {
       )}
 
       {tab === "PHOTO" && <MasonryGrid data={photos.photos.slice(0, 6)} />}
-      {tab === "AI" && <AIGrid data={aiWorks.works.slice(0, 6)} />}
+      {tab === "AI" && <AIGrid data={aiWorks.works.slice(0, 6)} showTabs={false} />}
       {tab === "VIDEO" && (
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {videos.videos.slice(0, 6).map((v) => (

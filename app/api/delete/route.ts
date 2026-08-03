@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { unlink } from "fs/promises";
-import { join } from "path";
+import { join, isAbsolute, normalize } from "path";
 import { exec } from "child_process";
 
 const PUBLIC = join(process.cwd(), "public");
@@ -11,7 +11,12 @@ export async function POST(req: NextRequest) {
     if (!target || !filename) {
       return NextResponse.json({ error: "缺少参数" }, { status: 400 });
     }
-    if (!/^[\w\u4e00-\u9fa5.\-]+$/.test(filename)) {
+    // filename 可为相对路径（如 "写真/xxx.jpg"），禁止 .. 和绝对路径
+    if (
+      !/^[\w\u4e00-\u9fa5./\- ]+$/.test(filename) ||
+      filename.includes("..") ||
+      isAbsolute(filename)
+    ) {
       return NextResponse.json({ error: "文件名非法" }, { status: 400 });
     }
 
@@ -20,7 +25,7 @@ export async function POST(req: NextRequest) {
     else if (target === "ai") subdir = "ai-works";
     else return NextResponse.json({ error: "未知目标" }, { status: 400 });
 
-    const filePath = join(PUBLIC, subdir, filename);
+    const filePath = normalize(join(PUBLIC, subdir, filename));
     await unlink(filePath);
 
     const script = target === "works" ? "scan-photos.js" : "scan-ai.js";

@@ -8,7 +8,7 @@ const CONTENT_DIR = join(process.cwd(), "content");
 
 export async function POST(req: NextRequest) {
   try {
-    const { target, filename, data } = await req.json();
+    const { target, filename, data, category } = await req.json();
     if (!target || !filename || !data) {
       return NextResponse.json({ error: "缺少参数" }, { status: 400 });
     }
@@ -32,7 +32,12 @@ export async function POST(req: NextRequest) {
     } else if (target === "works") {
       publicPath = join(PUBLIC_DIR, "works", filename);
     } else if (target === "ai") {
-      publicPath = join(PUBLIC_DIR, "ai-works", filename);
+      // AI 作品：按分类存到 public/ai-works/<分类>/，默认"写真"
+      const safeCat =
+        category === "写真" || category === "创意" || category === "人设"
+          ? category
+          : "写真";
+      publicPath = join(PUBLIC_DIR, "ai-works", safeCat, filename);
     } else if (target === "video-cover") {
       // 视频封面：存到 public/video-covers/，文件名带时间戳避免重名
       const safeName = `cover-${Date.now()}${ext}`;
