@@ -24,6 +24,16 @@ type VideoItem = {
   duration: string;
 };
 
+type BlogPost = {
+  id: string;
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  content: string;
+  tags: string[];
+};
+
 function getYouTubeId(url: string): string | null {
   const patterns = [
     /youtube\.com\/watch\?v=([\w-]{6,})/,
@@ -49,6 +59,8 @@ export default function AdminPage() {
   const [works, setWorks] = useState<Media[]>([]);
   const [ais, setAIs] = useState<Media[]>([]);
   const [videos, setVideos] = useState<VideoItem[]>([]);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [newPost, setNewPost] = useState({ title: "", date: "", tags: "", content: "" });
   const [aiCategory, setAiCategory] = useState("写真");
   const [status, setStatus] = useState<{ kind: "ok" | "err"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
@@ -58,15 +70,17 @@ export default function AdminPage() {
   }, []);
 
   async function loadData() {
-    const [s, l, v] = await Promise.all([
+    const [s, l, v, p] = await Promise.all([
       fetch("/api/save-site").then((r) => (r.ok ? r.json() : null)),
       fetch("/api/list").then((r) => r.json()),
       fetch("/api/videos").then((r) => (r.ok ? r.json() : { videos: [] })),
+      fetch("/api/posts").then((r) => (r.ok ? r.json() : { posts: [] })),
     ]);
     setSite(s);
     setWorks(l.works || []);
     setAIs(l.ai || []);
     setVideos(v.videos || []);
+    setPosts(p.posts || []);
   }
 
   function flash(kind: "ok" | "err", text: string) {
@@ -219,6 +233,64 @@ export default function AdminPage() {
       });
       const data = await r.json();
       if (r.ok) flash("ok", "视频已保存");
+      else flash("err", data.error || "保存失败");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  function addPost() {
+    const title = newPost.title.trim();
+    if (!title) {
+      flash("err", "请先填写文章标题");
+      return;
+    }
+    const content = newPost.content.trim();
+    if (!content) {
+      flash("err", "请填写正文内容");
+      return;
+    }
+    // 摘要：取正文第一段，截断到 80 字
+    const firstPara =
+      content
+        .split("\n")
+        .map((s) => s.trim())
+        .find((s) => s !== "") || "";
+    const excerpt =
+      firstPara.length > 80 ? firstPara.slice(0, 80) + "..." : firstPara;
+    const tags = newPost.tags
+      .split(/[,，、\s]+/)
+      .map((t) => t.trim())
+      .filter(Boolean);
+    const post: BlogPost = {
+      id: String(Date.now()),
+      slug: `post-${Date.now()}`,
+      title,
+      date: newPost.date || new Date().toISOString().slice(0, 10),
+      excerpt,
+      content,
+      tags,
+    };
+    setPosts((prev) => [post, ...prev]);
+    setNewPost({ title: "", date: "", tags: "", content: "" });
+    flash("ok", "文章已添加（记得点保存）");
+  }
+
+  function removePost(index: number) {
+    if (!confirm("确定删除这篇文章?")) return;
+    setPosts((prev) => prev.filter((_, i) => i !== index));
+  }
+
+  async function savePosts() {
+    setSaving(true);
+    try {
+      const r = await fetch("/api/posts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ posts }),
+      });
+      const data = await r.json();
+      if (r.ok) flash("ok", "文章已保存");
       else flash("err", data.error || "保存失败");
     } finally {
       setSaving(false);
@@ -482,6 +554,87 @@ export default function AdminPage() {
             className="mt-4 inline-flex items-center gap-2 rounded-sm border border-white/15 bg-white/[0.05] px-6 py-2.5 text-xs uppercase tracking-[0.25em] transition-all hover:border-white/40 hover:bg-white/[0.1] disabled:opacity-50"
           >
             <Save size={14} /> 保存视频列表
+          </button>
+        </Section>
+
+        {/* Blog */}
+        <Section
+          title={`博客文章 (${posts.length})`}
+          desc="写新文章：填标题 → 写正文（段落之间用空行隔开）→ 点「添加文章」，最后点「保存文章列表」。"
+        >
+          <div className="rounded border border-white/10 bg-black/30 p-4">
+            <p className="mb-3 text-xs uppercase tracking-wider text-neutral-400">
+              新建文章
+            </p>
+            <div className="grid gap-3 md:grid-cols-2">
+              <input
+                type="text"
+                placeholder="文章标题（必填）"
+                value={newPost.title}
+                onChange={(e) => setNewPost((p) => ({ ...p, title: e.target.value }))}
+                className="w-full rounded border border-white/15 bg-black/40 px-3 py-2 text-sm text-white outline-none focus:border-white/40"
+              />
+              <input
+                type="date"
+                value={newPost.date}
+                onChange={(e) => setNewPost((p) => ({ ...p, date: e.target.value }))}
+                className="w-full rounded border border-white/15 bg-black/40 px-3 py-2 text-sm text-white outline-none focus:border-white/40 [color-scheme:dark]"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="标签（用逗号分隔，如：AI, 随笔, 创作心得）"
+              value={newPost.tags}
+              onChange={(e) => setNewPost((p) => ({ ...p, tags: e.target.value }))}
+              className="mt-3 w-full rounded border border-white/15 bg-black/40 px-3 py-2 text-sm text-white outline-none focus:border-white/40"
+            />
+            <textarea
+              placeholder={
+                "正文内容（段落之间空一行）\n\n第一段会自动成为列表页的摘要。"
+              }
+              rows={8}
+              value={newPost.content}
+              onChange={(e) => setNewPost((p) => ({ ...p, content: e.target.value }))}
+              className="mt-3 w-full rounded border border-white/15 bg-black/40 px-3 py-2 text-sm text-white outline-none placeholder:text-neutral-600 focus:border-white/40"
+            />
+            <button
+              onClick={addPost}
+              className="mt-3 inline-flex items-center gap-2 rounded border border-white/15 bg-white/[0.05] px-5 py-2 text-xs uppercase tracking-[0.25em] text-white transition-all hover:border-white/40 hover:bg-white/[0.1]"
+            >
+              <Plus size={14} /> 添加文章
+            </button>
+          </div>
+
+          <div className="space-y-2">
+            {posts.map((p, i) => (
+              <div
+                key={p.id}
+                className="flex items-center justify-between gap-3 rounded border border-white/10 bg-black/30 px-4 py-3"
+              >
+                <div className="min-w-0">
+                  <p className="truncate text-sm text-white">{p.title}</p>
+                  <p className="mt-0.5 text-xs text-neutral-500">
+                    {p.date}
+                    {p.tags.length > 0 ? ` · ${p.tags.join(" / ")}` : ""}
+                  </p>
+                </div>
+                <button
+                  onClick={() => removePost(i)}
+                  className="shrink-0 rounded p-2 text-neutral-500 transition-colors hover:bg-red-500/20 hover:text-red-400"
+                  aria-label="删除"
+                >
+                  <Trash2 size={14} />
+                </button>
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={savePosts}
+            disabled={saving}
+            className="mt-4 inline-flex items-center gap-2 rounded-sm border border-white/15 bg-white/[0.05] px-6 py-2.5 text-xs uppercase tracking-[0.25em] transition-all hover:border-white/40 hover:bg-white/[0.1] disabled:opacity-50"
+          >
+            <Save size={14} /> 保存文章列表
           </button>
         </Section>
       </div>

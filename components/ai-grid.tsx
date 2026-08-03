@@ -97,7 +97,7 @@ export function AIGrid({
         </div>
       )}
 
-      <Dialog open={!!active} onClose={() => setActive(null)}>
+      <Dialog open={!!active} onClose={() => setActive(null)} className="w-fit max-w-[95vw] bg-transparent border-0">
         {active && (
           <div className="bg-neutral-950">
             {/* eslint-disable-next-line @next/next/no-img-element */}
