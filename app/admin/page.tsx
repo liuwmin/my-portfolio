@@ -124,6 +124,32 @@ export default function AdminPage() {
     reader.readAsDataURL(file);
   }
 
+  async function uploadCover(file: File, index: number) {
+    const reader = new FileReader();
+    reader.onload = async () => {
+      const data = reader.result as string;
+      try {
+        const r = await fetch("/api/upload", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            target: "video-cover",
+            filename: file.name,
+            data,
+          }),
+        });
+        const result = await r.json();
+        if (r.ok) {
+          updateVideo(index, "thumbnail", result.url);
+          flash("ok", "封面已上传");
+        } else flash("err", result.error || "上传失败");
+      } catch (e) {
+        flash("err", (e as Error).message);
+      }
+    };
+    reader.readAsDataURL(file);
+  }
+
   async function deleteFile(target: "works" | "ai", filename: string) {
     if (!confirm(`确定删除 ${filename}?`)) return;
     try {
@@ -334,7 +360,26 @@ export default function AdminPage() {
                 key={v.id || i}
                 className="grid gap-3 rounded border border-white/10 bg-black/30 p-3 md:grid-cols-[120px_1fr_auto]"
               >
-                <div className="aspect-video overflow-hidden rounded bg-neutral-900">
+                <div
+                  title="点击或拖入图片设置封面"
+                  onClick={() => {
+                    const input = document.createElement("input");
+                    input.type = "file";
+                    input.accept = "image/*";
+                    input.onchange = () => {
+                      const f = input.files?.[0];
+                      if (f) uploadCover(f, i);
+                    };
+                    input.click();
+                  }}
+                  onDragOver={(e) => e.preventDefault()}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    const f = e.dataTransfer.files?.[0];
+                    if (f && f.type.startsWith("image/")) uploadCover(f, i);
+                  }}
+                  className="aspect-video cursor-pointer overflow-hidden rounded bg-neutral-900"
+                >
                   {v.thumbnail || autoThumb(v.videoUrl) ? (
                     <img
                       src={v.thumbnail || autoThumb(v.videoUrl)}
@@ -342,8 +387,9 @@ export default function AdminPage() {
                       className="h-full w-full object-cover"
                     />
                   ) : (
-                    <div className="flex h-full items-center justify-center text-neutral-700">
+                    <div className="flex h-full flex-col items-center justify-center gap-1 text-neutral-700">
                       <VideoIcon size={20} />
+                      <span className="text-[10px]">点击设封面</span>
                     </div>
                   )}
                 </div>
@@ -360,6 +406,13 @@ export default function AdminPage() {
                     placeholder="视频链接（YouTube / B站 / .mp4 直链）"
                     value={v.videoUrl}
                     onChange={(e) => updateVideo(i, "videoUrl", e.target.value)}
+                    className="w-full rounded border border-white/15 bg-black/40 px-3 py-1.5 text-sm text-white outline-none focus:border-white/40"
+                  />
+                  <input
+                    type="text"
+                    placeholder="封面链接（B站/MP4 需要手动填，YouTube 自动生成可留空）"
+                    value={v.thumbnail || ""}
+                    onChange={(e) => updateVideo(i, "thumbnail", e.target.value)}
                     className="w-full rounded border border-white/15 bg-black/40 px-3 py-1.5 text-sm text-white outline-none focus:border-white/40"
                   />
                   <div className="grid grid-cols-2 gap-2">

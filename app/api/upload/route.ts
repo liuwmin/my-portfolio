@@ -33,6 +33,10 @@ export async function POST(req: NextRequest) {
       publicPath = join(PUBLIC_DIR, "works", filename);
     } else if (target === "ai") {
       publicPath = join(PUBLIC_DIR, "ai-works", filename);
+    } else if (target === "video-cover") {
+      // 视频封面：存到 public/video-covers/，文件名带时间戳避免重名
+      const safeName = `cover-${Date.now()}${ext}`;
+      publicPath = join(PUBLIC_DIR, "video-covers", safeName);
     } else {
       return NextResponse.json({ error: "未知目标：" + target }, { status: 400 });
     }
