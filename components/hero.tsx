@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { MetalAccent } from "@/components/ui/metal-accent";
 import site from "@/content/site.json";
 
 export function Hero() {
@@ -30,9 +29,8 @@ export function Hero() {
             : "object-cover"
         }
       />
-      <div className="absolute inset-0 bg-black/40" />
-      <MetalAccent className="absolute inset-0 h-full w-full" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/70" />
+      <div className="absolute inset-0 bg-black/10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40" />
 
       <div className="relative z-10 flex flex-col items-center px-6 text-center">
         <motion.h1
