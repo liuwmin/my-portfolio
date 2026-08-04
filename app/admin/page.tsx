@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Upload, Trash2, Save, ExternalLink, Camera, Plus, Video as VideoIcon } from "lucide-react";
+import { Upload, Trash2, Save, ExternalLink, Camera, Plus, Video as VideoIcon, ChevronDown, Pencil } from "lucide-react";
 
 type Social = { instagram: string; twitter: string; youtube: string; github: string };
 type Profile = {
@@ -66,6 +66,7 @@ export default function AdminPage() {
   const [videos, setVideos] = useState<VideoItem[]>([]);
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [newPost, setNewPost] = useState({ title: "", date: "", tags: "", content: "" });
+  const [editingId, setEditingId] = useState<string | null>(null);
   const [aiCategory, setAiCategory] = useState("写真");
   const [status, setStatus] = useState<{ kind: "ok" | "err"; text: string } | null>(null);
   const [saving, setSaving] = useState(false);
@@ -267,6 +268,23 @@ export default function AdminPage() {
       .split(/[,，、\s]+/)
       .map((t) => t.trim())
       .filter(Boolean);
+
+    // 编辑模式：更新已有文章
+    if (editingId) {
+      setPosts((prev) =>
+        prev.map((p) =>
+          p.id === editingId
+            ? { ...p, title, date: newPost.date || p.date, excerpt, content, tags }
+            : p
+        )
+      );
+      setEditingId(null);
+      setNewPost({ title: "", date: "", tags: "", content: "" });
+      flash("ok", "文章已修改（记得点保存）");
+      return;
+    }
+
+    // 新建模式
     const post: BlogPost = {
       id: String(Date.now()),
       slug: `post-${Date.now()}`,
@@ -279,6 +297,13 @@ export default function AdminPage() {
     setPosts((prev) => [post, ...prev]);
     setNewPost({ title: "", date: "", tags: "", content: "" });
     flash("ok", "文章已添加（记得点保存）");
+  }
+
+  function editPost(index: number) {
+    const p = posts[index];
+    setEditingId(p.id);
+    setNewPost({ title: p.title, date: p.date, tags: p.tags.join(", "), content: p.content });
+    flash("ok", "正在编辑：" + p.title);
   }
 
   function removePost(index: number) {
@@ -449,7 +474,7 @@ export default function AdminPage() {
         </Section>
 
         {/* Photography */}
-        <Section title={`摄影作品 (${works.length})`} desc="拖入图片批量上传，悬停缩略图可删除。">
+        <Section title={`摄影作品 (${works.length})`} desc="拖入图片批量上传，悬停缩略图可删除。点标题展开/收起。" defaultOpen={false}>
           <DropZone
             hint="拖入图片即可批量添加"
             onFiles={(files) =>
@@ -462,7 +487,7 @@ export default function AdminPage() {
         </Section>
 
         {/* AI */}
-        <Section title={`AI 作品 (${ais.length})`}>
+        <Section title={`AI 作品 (${ais.length})`} defaultOpen={false}>
           <div className="flex items-center gap-3">
             <span className="text-xs uppercase tracking-wider text-neutral-500">
               上传到分类：
@@ -606,9 +631,22 @@ export default function AdminPage() {
           desc="写新文章：填标题 → 写正文（段落之间用空行隔开）→ 点「添加文章」，最后点「保存文章列表」。"
         >
           <div className="rounded border border-white/10 bg-black/30 p-4">
-            <p className="mb-3 text-xs uppercase tracking-wider text-neutral-400">
-              新建文章
-            </p>
+            <div className="mb-3 flex items-center justify-between">
+              <p className="text-xs uppercase tracking-wider text-neutral-400">
+                {editingId ? "编辑文章" : "新建文章"}
+              </p>
+              {editingId && (
+                <button
+                  onClick={() => {
+                    setEditingId(null);
+                    setNewPost({ title: "", date: "", tags: "", content: "" });
+                  }}
+                  className="text-xs text-neutral-500 underline-offset-4 transition-colors hover:text-white hover:underline"
+                >
+                  取消编辑
+                </button>
+              )}
+            </div>
             <div className="grid gap-3 md:grid-cols-2">
               <input
                 type="text"
@@ -644,7 +682,7 @@ export default function AdminPage() {
               onClick={addPost}
               className="mt-3 inline-flex items-center gap-2 rounded border border-white/15 bg-white/[0.05] px-5 py-2 text-xs uppercase tracking-[0.25em] text-white transition-all hover:border-white/40 hover:bg-white/[0.1]"
             >
-              <Plus size={14} /> 添加文章
+              <Plus size={14} /> {editingId ? "保存修改" : "添加文章"}
             </button>
           </div>
 
@@ -661,13 +699,23 @@ export default function AdminPage() {
                     {p.tags.length > 0 ? ` · ${p.tags.join(" / ")}` : ""}
                   </p>
                 </div>
-                <button
-                  onClick={() => removePost(i)}
-                  className="shrink-0 rounded p-2 text-neutral-500 transition-colors hover:bg-red-500/20 hover:text-red-400"
-                  aria-label="删除"
-                >
-                  <Trash2 size={14} />
-                </button>
+                <div className="flex shrink-0 items-center gap-1">
+                  <button
+                    onClick={() => editPost(i)}
+                    className="rounded p-2 text-neutral-500 transition-colors hover:bg-white/10 hover:text-white"
+                    aria-label="编辑"
+                    title="编辑"
+                  >
+                    <Pencil size={14} />
+                  </button>
+                  <button
+                    onClick={() => removePost(i)}
+                    className="rounded p-2 text-neutral-500 transition-colors hover:bg-red-500/20 hover:text-red-400"
+                    aria-label="删除"
+                  >
+                    <Trash2 size={14} />
+                  </button>
+                </div>
               </div>
             ))}
           </div>
@@ -689,16 +737,33 @@ function Section({
   title,
   desc,
   children,
+  defaultOpen = true,
 }: {
   title: string;
   desc?: string;
   children: React.ReactNode;
+  defaultOpen?: boolean;
 }) {
+  const [open, setOpen] = useState(defaultOpen);
   return (
     <section className="rounded-lg border border-white/10 bg-white/[0.03] p-6">
-      <h2 className="mb-1 text-base font-medium tracking-wider">{title}</h2>
-      {desc && <p className="mb-4 text-xs text-neutral-500">{desc}</p>}
-      <div className="space-y-4">{children}</div>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="flex w-full items-start justify-between gap-4 text-left"
+      >
+        <div>
+          <h2 className="text-base font-medium tracking-wider">{title}</h2>
+          {desc && <p className="mt-1 text-xs text-neutral-500">{desc}</p>}
+        </div>
+        <ChevronDown
+          size={18}
+          className={
+            "mt-1 shrink-0 text-neutral-500 transition-transform duration-200 " +
+            (open ? "rotate-180" : "")
+          }
+        />
+      </button>
+      {open && <div className="mt-4 space-y-4">{children}</div>}
     </section>
   );
 }
