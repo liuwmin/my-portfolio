@@ -11,7 +11,7 @@ export function Footer() {
             {profile.name}
           </p>
           <p className="mt-1 text-xs text-neutral-500">
-            © 2024 {profile.name}
+            © {new Date().getFullYear()} {profile.name}
           </p>
         </div>
         <div className="flex items-center gap-5">
